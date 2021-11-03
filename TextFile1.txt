@@ -1,0 +1,9 @@
+
+                $sql = "insert into users (userName, userPassword ) values ('" .$user. "','" .$encrypted. "')"; 
+                if($conn->query($sql) === TRUE){
+                    $message = "Username added";
+                }
+                else
+                {
+                    $message = "Could not add user - no idea why!";
+                }
